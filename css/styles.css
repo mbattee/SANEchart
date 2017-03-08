@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
+
+body {
+  font-size: 1.7rem;
+  color: #3a3a3a;
+  font-family: 'Montserrat';
+}
