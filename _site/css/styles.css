@@ -91,3 +91,53 @@ a:hover {
   text-align: center;
   font-size: 1.5rem;
 }
+
+/*ABOUT SECTION*/
+
+.sec-padding {
+  padding: 10vh 15vw;
+}
+
+
+/*CHARTING TEMPLATES*/
+
+.charting-templates {
+  background-color: #ffffff;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.template-text {
+  color: white;
+}
+
+.block {
+  border: 2px solid #ffffff;
+  width: 40%;
+  height: 40%;
+  padding: 10vh 10vw;
+  background-color: #90dae3;
+}
+
+.block2 {
+  border: 2px solid #ffffff;
+  width: 40%;
+  height: 40%;
+  padding: 10vh 10vw;
+  background-color: #a86bb0;
+}
+
+.block-within {
+  border: 2px solid #ffffff;
+  width: 40%;
+  height: 40%;
+  padding: 10vh 10vw;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.parent {
+  position: relative;
+}

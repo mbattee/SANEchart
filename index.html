@@ -1,10 +1,33 @@
+---
+title: SANEchart - Online Charting for Sexual Assault Nurse Examiners
+layout: default
+benefits:
+  - title: HIPAA Compliant
+    image: images/sunflower.png
+  - title: HIPPO Compliant
+    image: images/sunflower.png
+  - title: GIRAF Compliant
+    image: images/sunflower.png
+  - title: RINO Compliant
+    image: images/sunflower.png
+  - title: CHITA Compliant
+    image: images/sunflower.png
+  - title: CROCO Compliant
+    image: images/sunflower.png
+  - title: MPALA Compliant
+    image: images/sunflower.png
+  - title: LEPRD Compliant
+    image: images/sunflower.png
+  - title: HIPAA Compliant
+    image: images/sunflower.png
+---
 <!DOCTYPE html>
 <html>
 
 <head>
   <!-- START head element -->
 
-  <title>SANEchart - Online Charting for Sexual Assault Nurse Examiners</title>
+  <title>{{ page.title }}</title>
 
 <!--Tells browser that this is repsonsive design. Always use the META below.-->
 
@@ -67,40 +90,49 @@
     </header>
   </section>
 
-    <section class="grid">
+
+  <section class="sec-padding">
+      <h2>About SANEchart</h2>
+        <p>
+          This is text explaining who SANEchart is. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+  </section>
+
+
+    <section class="grid charting-templates">
       <div class="col-12">
         <h2>Charting Templates</h2>
       </div>
-      <div class="col-6">
-        <h3>Sexual Assault
+      <div class="col-6 block">
+        <h3 class="template-text">
+          Sexual Assault
           <div>
             Adult/Peds
           </div>
         </h3>
       </div>
-      <div class="col-6">
-        <h3>
+      <div class="col-6 block2">
+        <h3 class="template-text">
           Abuse/Neglect
           <div>
             Elder/Peds
           </div>
         </h3>
       </div>
-      <div class="col-6">
-        <h3>
+      <div class="col-6 block2">
+        <h3 class="template-text">
           Intimate Partner Violence
         </h3>
       </div>
-      <div class="col-6">
-        <h3>
+      <div class="col-6 block">
+        <h3 class="template-text">
           Death Investigations
         </h3>
       </div>
-
-
-
-
     </section>
+
+
+
 
     <section>
       <div>
@@ -112,15 +144,16 @@
     </section>
 
 
-
     <section class="grid">
       <div class="col-12">
         <h2>Software Solutions</h2>
       </div>
+      {% for benefit in page.benefits %}
       <div class="col-4">
-        <img src="images/bluesunflower.png" />
-        <h3>HIPAA Compliant</h3>
+        <img src="{{ benefit.image }}" />
+        <h3>{{ benefit.title }}</h3>
       </div>
+      {% endfor %}
     </section>
 
 
@@ -205,18 +238,6 @@
           This text is sample text to answer a frequently asked question.
         </p>
       </div>
-    </section>
-
-
-
-    <section>
-      <div>
-        <img src="images/sunflower.png" />
-      </div>
-        <h2>About SANEchart</h2>
-          <p>
-            This is text explaining who SANEchart is. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
     </section>
 
 
