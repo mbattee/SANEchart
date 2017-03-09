@@ -141,3 +141,28 @@ a:hover {
 .parent {
   position: relative;
 }
+
+/*SOLUTIONS PAGE*/
+
+.sol-background {
+  background-color: #ffffff;
+  padding: 10vh;
+}
+
+/*WATCH DEMO PAGE*/
+
+.video-text {
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+.video-background {
+  background-color: #cecece;
+}
