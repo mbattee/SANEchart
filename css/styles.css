@@ -12,6 +12,8 @@ body {
   font-size: 1.7rem;
   color: #3a3a3a;
   font-family: 'Raleway';
+  letter-spacing: 4px;
+
 }
 
 /*TYPOGRAPHY*/
@@ -19,11 +21,14 @@ body {
 h1, h2, h3, h4 {
   color: #008b8b;
   text-align: center;
-  font-weight: bold;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+.small {
+  font-size: 2rem;
 }
 
 h2 {
@@ -37,10 +42,27 @@ h3, h4 {
 
 /*HEADER*/
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ee3233;
+}
+
+.top-banner {
+  background-image: url("../images/nurselaptop1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header-logo img {
   width: 3rem;
 }
 
 .menu {
   text-align: right;
+  text size: 1rem;
 }
