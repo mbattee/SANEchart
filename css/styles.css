@@ -1,11 +1,21 @@
+/*css reset*/
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   }
 
+/*universal*/
+
 body {
   font-size: 1.7rem;
   color: #3a3a3a;
   font-family: 'Raleway';
+}
+
+h1, h2 {
+  color: #008b8b;
+  font-size: 3rem;
+  font-weight: bold;
 }
