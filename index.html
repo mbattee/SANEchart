@@ -1,19 +1,25 @@
 ---
 layout: default
 title: SANEchart - Online Charting for Sexual Assault Nurse Examiners
-benefits:
+features:
   - title: Cloud-Based
     image: images/cloud.png
+    description: This is sample text for features.
   - title: Data Sharing*
     image: images/share.png
-  - title: Exam-Specific Templates
+    description: This is sample text for features.
+  - title: Exam Templates
     image: images/templates.png
+    description: This is sample text for features.
   - title: Photo Uploading*
     image: images/camera.png
+    description: This is sample text for features.
   - title: QI Tools*
     image: images/quality.png
+    description: This is sample text for features.
   - title: Report Creation*
     image: images/reports.png
+    description: This is sample text for features.
 ---
 
 <section>
@@ -55,99 +61,86 @@ benefits:
   </header>
 </section>
 
+<!-- THIS IS THE ABOUT SECTION -->
 
-<section class="about-section">
-      <div class="about-sanechart">
+<section class="about-section grey-section">
+      <div class="">
         <p>
-        The common problem is listed in this about section, and everything you need to know about SANEchart is here. I'll also add additional text in a second paragraph giving more details about SANEchart. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-    <div class="about-sanechart2">
-      <p>
-        The solution and benefits come on the next page. Everything you need to know about SANEchart is here. I'll also add additional text in a second paragraph giving more details about SANEchart. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        A free, cloud-based solution for forensic nurses, forensic practitioners and healthcare organizations.
       </p>
     </div>
 </section>
 
+<!-- THIS IS THE FEATURES SECTION -->
 
-  <section class="grid charting-templates">
+  <section class="grid white-section features-section">
     <div class="col-12">
-      <h2>Charting Templates</h2>
+      <h2>FEATURES</h2>
     </div>
-    <div class="col-6 block">
-      <h3 class="template-text">
-        Sexual Assault
-        <div>
-          Adult/Peds
-        </div>
-      </h3>
-    </div>
-    <div class="col-6 block2">
-      <h3 class="template-text">
-        Abuse/Neglect
-        <div>
-          Elder/Peds
-        </div>
-      </h3>
-    </div>
-    <div class="col-6 block2">
-      <h3 class="template-text">
-        Intimate Partner Violence
-      </h3>
-    </div>
-    <div class="col-6 block">
-      <h3 class="template-text">
-        Death Investigations
-      </h3>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class="video-background">
-      <p class="video-text">
-        Watch 2 Minute Demo Now
+    {% for feature in page.features %}
+    <div class="col-4 feature-box">
+      <img class="resize" src="{{ feature.image }}" />
+      <h3>{{ feature.title }}</h3>
+      <p>{{ feature.description }}
       </p>
-      <iframe class="video" src="https://player.vimeo.com/video/113506408" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </section>
-
-
-
-  <section class="grid sol-background">
-    <div class="col-12">
-      <h2>Software Solutions</h2>
-    </div>
-    {% for benefit in page.benefits %}
-    <div class="col-4">
-      <img src="{{ benefit.image }}" />
-      <h3>{{ benefit.title }}</h3>
     </div>
     {% endfor %}
   </section>
 
-
-
-  <section class="grid">
-    <div class="col-12">
-      <h2>Testimonials</h2>
+<!-- THIS IS THE FAQ SECTION -->
+  <section>
+    <div class="dropdown-faq">
+        <a href="#">Question1</a>
+           <div class="dropdown-content">
+             <p>This is the answer to question #1.</p>
     </div>
-    <div class="col-4">
-      <img src="images/bluesunflower.png" />
+    <div class="dropdown-faq">
+        <a href="#">Question2</a>
+        <div class="dropdown-content">
+    </div>
+  </section>
+
+  <!--TTHIS IS THE TESTIMONIAL SECTION -->
+
+  <section class="grid testimonial-background">
+    <div class="col-12">
+      <h2>TESTIMONIALS</h2>
+    </div>
+    <div class="col-4 center">
+      <img class="testimonial-photos" src="images/headshot1.jpg" />
     </div>
     <div class="col-8">
       <p>
-        Marsha is great! This is sample text about a testimonial.
+        Marsha is awesome! This is sample text about a testimonial.
       </p>
       <p>
         Jane Doe,
       <span>Forensic Nurse Examiner</span>
       </p>
     </div>
+ </section>
 
-  </section>
+ <section class="grid testimonial-background2">
+   <div class="col-12">
+     <h2>TESTIMONIALS</h2>
+   </div>
+   <div class="col-8 center">
+     <p>
+       Marsha is awesome! This is sample text about a testimonial.
+     </p>
+     <p>
+       Jane Doe,
+     <span>Forensic Nurse Examiner</span>
+     </p>
+   </div>
+   </div>
+   <div class="col-4">
+     <img class="testimonial-photos" src="images/headshot1.jpg" />
+   </div>
+</section>
 
+
+  <!--THIS IS THE SALES PAGE-->
 
   <section class="grid">
     <div class="col-12">
@@ -225,3 +218,59 @@ benefits:
       </p>
     </div>
   </section>
+
+
+
+<!--THIS IS CODE FOR A CONTACT FORM FROM FORMSPREE.IO **REMEMBER TO ADD 'THANK YOU PAGE'-->
+
+<!-- <form method="POST" action="http://formspree.io/marsha.battee@gmail.com">
+  <input type="name" name="name" placeholder="First Name">
+  <input type="name" name="name" placeholder="Last Name">
+  <input type="email" name="email" placeholder="Email Address">
+<textarea name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
+</form> -->
+
+
+<!--THIS IS CODE FOR A CENTERED VIDEO-->
+
+    <!-- <section>
+      <div class="video-background">
+        <p class="video-text">
+          Watch 2 Minute Demo Now
+        </p>
+        <iframe class="video" src="https://player.vimeo.com/video/113506408" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </section> -->
+
+    <!-- <section class="grid charting-templates">
+      <div class="col-12">
+        <h2>Charting Templates</h2>
+      </div>
+      <div class="col-6 block">
+        <h3 class="template-text">
+          Sexual Assault
+          <div>
+            Adult/Peds
+          </div>
+        </h3>
+      </div>
+      <div class="col-6 block2">
+        <h3 class="template-text">
+          Abuse/Neglect
+          <div>
+            Elder/Peds
+          </div>
+        </h3>
+      </div>
+      <div class="col-6 block2">
+        <h3 class="template-text">
+          Intimate Partner Violence
+        </h3>
+      </div>
+      <div class="col-6 block">
+        <h3 class="template-text">
+          Death Investigations
+        </h3>
+      </div>
+    </section> -->

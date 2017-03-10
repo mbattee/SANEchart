@@ -35,6 +35,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  color: #ee3233;
 }
 
 h3, h4 {
@@ -94,25 +95,10 @@ a:hover {
 
 /*ABOUT SECTION*/
 
-.about-sanechart {
-  border-top: 1px solid #d6d6d6;
-  padding-top: 10vh;
-  padding-bottom: 3vh;
-  padding-left: 20%;
-  padding-right: 20%;
+.about-section {
   text-align: center;
-  background-color: #f5f5f5;
 }
 
-.about-sanechart2 {
-  padding-top: 3vh;
-  padding-bottom: 10vh;
-  padding-left: 20%;
-  padding-right: 20%;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #d6d6d6;
-}
 
 /*CHARTING TEMPLATES*/
 
@@ -157,15 +143,89 @@ a:hover {
   position: relative;
 }
 
-/*SOLUTIONS PAGE*/
+/*FEATURES PAGE*/
 
-.sol-background {
+.white-section {
   background-color: #ffffff;
-  padding: 10vh;
+  padding: 10vh 10vw;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
 }
 
-/*WATCH DEMO PAGE*/
+.grey-section {
+  background-color: #f5f5f5;
+  padding: 10vh 15vw;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+}
 
+.testimonial-background {
+  font-size: 1rem;
+  background-color: #90dae3;
+  margin: 30%;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+}
+
+.testimonial-background2 {
+  font-size: 1rem;
+  background-color: #d8b1de;
+  margin: 30%;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+}
+
+.features-section p {
+  font-size: 1rem;
+}
+
+.feature-box {
+  text-align: center;
+}
+
+img.resize {
+   max-width:40%;
+   max-height:40%;
+   margin: 5%;
+}
+
+/*FAQ*/
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 5px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.dropdown-content a {
+ display: block;
+ padding: 5px 15px;
+ text-align: left;
+ white-space: nowrap;
+}
+
+
+/*TESTIMONIALS*/
+
+img.testimonial-photos {
+   max-width:80%;
+   max-height:80%;
+   margin: 5%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #ee3233;
+    border-radius: 50%
+}
+
+
+/*img.photos2 {
+   max-width:100%;
+   max-height:100%;
+   margin: 5%;
+}*/
+
+/*WATCH DEMO PAGE*/
+/*
 .video-text {
   text-align: center;
   padding-bottom: 3%;
@@ -180,4 +240,4 @@ a:hover {
 
 .video-background {
   background-color: #cecece;
-}
+}*/
