@@ -195,19 +195,35 @@ img.resize {
   width: 80%;
   height: 100%;
   background-color: #f5f5f5;
-  border: 20px solid #ffffff;
+  border: 30px solid #ffffff;
 }
 
-.p-sales {
-  font-size: 1rem;
+.salesgrid-header {
+  font-size: 1.5rem;
   text-align: center;
+}
+
+ul {
+  font: 1.5rem "arial"
+}
+
+li {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  border-left: none;
+  border-right: none;
+  line-height: 4rem;
 }
 
 .sales-items {
 }
 
-.item-font {
-
+ul.sales-items {
+  list-style-type: square;
+  list-style-position: inside;
+  list-style: none;
+  text-align: center;
+  font:
 }
 
 /*TESTIMONIAL*/
