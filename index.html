@@ -20,6 +20,33 @@ features:
   - title: Report Creation*
     image: images/reports.png
     description: This is sample text for features.
+packages:
+  - name: Free
+    price: 0
+    feature-1: Something
+    feature-2: Something else
+    feature-3: Charting
+  - name: Basic
+    price: 50
+    feature-1: Something
+    feature-2: Something else
+    feature-3: Charting
+    feature-4: Basic thing
+  - name: Pro
+    price: 100
+    feature-1: Something
+    feature-2: Something else
+    feature-3: Charting
+    feature-4: Basic thing
+    feature-5: Pro thing
+  - name: Enterprise
+    price: 1000
+    feature-1: Something
+    feature-2: Something else
+    feature-3: Charting
+    feature-4: Basic thing
+    feature-5: Pro thing
+    feature-6: Enterprise thing
 ---
 
 <!--HOMEPAGE-->
@@ -74,28 +101,36 @@ features:
   <!--Sales Page-->
 
   <section class="grid2 grey-section">
+    {% for package in page.packages %}
       <div class="col-3 box">
-        <h3>Free</h3>
-          <p class="p-sales">
-            <ul class="sales-items">
-              <li>
-                Item 1
-              </li>
-              <li>
-                Item 2
-              </li>
-              <li>
-                Item 3
-              </li>
-              <li>
-                Item 4
-              </li>
-              <li>
-                Item 5
-              </li>
-            </ul>
-          </p>
+        <ul class="sales-items">
+          <li class="sales-items-title">
+            <h3>{{ package.name }}</h3>
+          </li>
+          <li>
+            <span class="sales-items-price-dollar">$</span><span class="sales-items-price-amount">{{ package.price }}</span><span class="sales-items-price-period">/mo</span>
+          </li>
+          <li>
+            {{ package.feature-1 }}
+          </li>
+          <li>
+            {{ package.feature-2 }}
+          </li>
+          <li>
+            {{ package.feature-3 }}
+          </li>
+          <li>
+            {{ package.feature-4 }}
+          </li>
+          <li>
+            {{ package.feature-5 }}
+          </li>
+          <li>
+            {{ package.feature-6 }}
+          </li>
+        </ul>
       </div>
+    {% endfor %}
   </section>
 
 
@@ -251,3 +286,30 @@ features:
         </h3>
       </div>
     </section> -->
+
+<!--Sales Table Reference-->
+<!--
+<section class="grid2 grey-section">
+    <div class="col-3 box">
+      <h3>Free</h3>
+      <p class="p-sales">
+        <ul class="sales-items">
+          <li>
+            Item 1
+          </li>
+          <li>
+            Item 2
+          </li>
+          <li>
+            Item 3
+          </li>
+          <li>
+            Item 4
+          </li>
+          <li>
+            Item 5
+          </li>
+        </ul>
+      </p>
+    </div>
+</section> -->

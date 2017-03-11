@@ -195,7 +195,8 @@ img.resize {
   width: 80%;
   height: 100%;
   background-color: #f5f5f5;
-  border: 30px solid #ffffff;
+  border: 10px solid #ffffff;
+  padding: 0;
 }
 
 .salesgrid-header {
@@ -203,19 +204,37 @@ img.resize {
   text-align: center;
 }
 
-ul {
+.sales-items ul {
   font: 1.5rem "arial"
 }
 
-li {
+.sales-items li {
   border-top: 1px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
   border-left: none;
   border-right: none;
-  line-height: 4rem;
+  line-height: 1.5rem;
+  padding: 15px 5px;
 }
 
-.sales-items {
+li.sales-items-title {
+  background-color: #a86bb0;
+}
+
+li.sales-items-title h3 {
+  color: #ffffff;
+}
+
+li .sales-items-price-dollar {
+  font-size: 1.0rem;
+  vertical-align: super;
+}
+
+li .sales-items-price-amount {
+  font-size: 2.0rem;
+}
+
+li .sales-items-price-period {
+  font-size: 1.0rem;
 }
 
 ul.sales-items {
@@ -223,7 +242,7 @@ ul.sales-items {
   list-style-position: inside;
   list-style: none;
   text-align: center;
-  font:
+  font-size: 1.2rem;
 }
 
 /*TESTIMONIAL*/
