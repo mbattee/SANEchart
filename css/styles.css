@@ -30,7 +30,7 @@ h1 {
 .subheading {
   font-size: 1.5rem;
   font-weight: 900;
-  padding: 50vh;
+  padding-top: 60vh;
   text-align: center;
 }
 
@@ -61,11 +61,16 @@ a:hover {
 
 .top-banner {
   background-color: #dadada;
-  /*background-image: url("../images/nursetransparentback.png");*/
+  background-image: url("../images/nursetransparentback.png");
+  background-position: center;
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   padding: 5vh 5vw;
+}
+
+.top-banner h1 {
+  text-align: center;
 }
 
 .word-spacing {
@@ -73,14 +78,40 @@ a:hover {
   padding-right: 10px;
 }
 
+header {
+  height: 100px;
+}
+
+header a {
+  line-height: 100px;
+}
+
 .header-logo img {
-  max-width:50%;
-  max-height:50%;
+  max-height:80px;
+  margin: 10px;
 }
 
 .menu {
   text-align: right;
   font-size: 1rem;
+}
+
+.invite-button {
+  background-color: #ee3233;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.invite-button:hover {
+  color: white;
+}
+
+.invite-popup {
+  height: 200px;
+  background-color: #ee3233;
+  display: none;
 }
 
 .homepage-image {
@@ -243,14 +274,81 @@ ul.sales-items {
   font-size: 1.2rem;
 }
 
-.signup-button {
-  background-color: #ffffff;
-  border-top: 1px solid #d6d6d6;
-  border-left: none;
-  border-right: none;
+.sales-items .signup-button {
+  border: 2px solid #a86bb0;
+  color: #a86bb0;
+  border-radius: 5px;
+  margin: 5px 0px;
   line-height: 1.5rem;
   padding: 10px 5px;
+  width: 50%;
+  height: 50%;
+  background-color: #fff;
+  display: inline-block;
 }
+
+/*CONTACT PAGE*/
+form {
+  width: 50%;
+  margin: 4vh auto;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #d6d6d6;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000000;
+}
+textarea {
+  min-height:12rem;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #ee3233;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.faqs-section {
+  padding: 10%;
+}
+
+.faqs-section h2 {
+  margin: 10px;
+}
+
+.faqs-box {}
+
+.faq {
+  border: 1px solid #a86bb0;
+  color: #a86bb0;
+}
+
+.faq-question {
+  padding: 10px;
+}
+
+.faq-answer {
+  padding: 10px 0px;
+  display: none;
+  color: #d6d6d6;
+}
+
+
+/* Testiomonial grids */
+.testimonials-section {
+  padding: 10% 0%;
+}
+
 
 /*TESTIMONIAL*/
 
