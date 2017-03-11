@@ -26,12 +26,17 @@ packages:
     feature-1: Something
     feature-2: Something else
     feature-3: Charting
+    feature-4: X
+    feature-5: X
+    feature-6: X
   - name: Basic
     price: 50
     feature-1: Something
     feature-2: Something else
     feature-3: Charting
     feature-4: Basic thing
+    feature-5: X
+    feature-6: X
   - name: Pro
     price: 100
     feature-1: Something
@@ -39,6 +44,7 @@ packages:
     feature-3: Charting
     feature-4: Basic thing
     feature-5: Pro thing
+    feature-6: X
   - name: Enterprise
     price: 1000
     feature-1: Something
@@ -97,38 +103,46 @@ packages:
     {% endfor %}
   </section>
 
+  <!--TESTIMONIALS-->
 
-  <!--Sales Page-->
+
+
+  <!--SALES PAGE-->
 
   <section class="grid2 grey-section">
     {% for package in page.packages %}
-      <div class="col-3 box">
-        <ul class="sales-items">
-          <li class="sales-items-title">
-            <h3>{{ package.name }}</h3>
-          </li>
-          <li>
-            <span class="sales-items-price-dollar">$</span><span class="sales-items-price-amount">{{ package.price }}</span><span class="sales-items-price-period">/mo</span>
-          </li>
-          <li>
-            {{ package.feature-1 }}
-          </li>
-          <li>
-            {{ package.feature-2 }}
-          </li>
-          <li>
-            {{ package.feature-3 }}
-          </li>
-          <li>
-            {{ package.feature-4 }}
-          </li>
-          <li>
-            {{ package.feature-5 }}
-          </li>
-          <li>
-            {{ package.feature-6 }}
-          </li>
-        </ul>
+      <div class="col-3">
+        <div class="box">
+          <ul class="sales-items">
+            <li class="sales-items-title">
+              <h3>{{ package.name }}</h3>
+            </li>
+            <li>
+              <span class="sales-items-price-dollar">$</span><span class="sales-items-price-amount">{{ package.price }}</span><span class="sales-items-price-period">/mo</span>
+            </li>
+            <li>
+              {{ package.feature-1 }}
+            </li>
+            <li>
+              {{ package.feature-2 }}
+            </li>
+            <li>
+              {{ package.feature-3 }}
+            </li>
+            <li>
+              {{ package.feature-4 }}
+            </li>
+            <li>
+              {{ package.feature-5 }}
+            </li>
+            <li>
+              {{ package.feature-6 }}
+            </li>
+            <li>
+              <a class="signup-button" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
       </div>
     {% endfor %}
   </section>
