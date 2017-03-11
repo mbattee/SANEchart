@@ -23,15 +23,33 @@
 <!--This is my main css file, keep at bottom --->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 
+
   <!-- END head element -->
 </head>
 
+<!--Footer element-->
+
+<footer>
+
+<!--JQuery Library-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--Adding main.js-->
+
+  <script src="/js/main.js">
+  </script>
+
+</footer>
 
   <body>
-    <section>
+
+    <div class="main">
+      <!--HOMEPAGE-->
+<section>
   <header class="grid top-banner">
-    <div class="header-logo col-3">
-      <img src="images/sunflower.png" />
+    <div class="header-logo col-3 menu">
+      <img src="images/sanechartlogo.png" />
     </div>
     <div class="col-9">
       <nav class="menu">
@@ -42,30 +60,12 @@
         href="#contact">CONTACT</a>
       </nav>
     </div>
-    <div class="col-12">
-      <h1 class="homepage-title">
-        SANEchart
-      </h1>
-      <div class="small">
-          A FREE, CLOUD-BASED SOLUTION FOR FORENSIC NURSES, FORENSIC PRACTITIONERS AND HEALTHCARE ORGANIZATIONS
-      </div>
-    <!-- <div class="subheader-menu">
-        <span>
-          <p>
-            <a href="#about">ABOUT</a>
-            <a href="#products">PRODUCTS</a>
-            <a href="#watch video">WATCH VIDEO</a>
-            <a href="#contact">CONTACT</a>
-          </p>
-        </span>
-    </div> -->
-      <div class="col-12">
-        <p class="demo-button">
-          WATCH VIDEO NOW
-        </p>
-      </div>
+    <div class="col-12 subheading">
+      <p>THE EASIEST WAY TO DOCUMENT FORENSIC FINDINGS</p>
+    </div>
   </header>
 </section>
+
 
 <!-- THIS IS THE ABOUT SECTION -->
 
@@ -128,21 +128,63 @@
     
   </section>
 
-<!-- THIS IS THE FAQ SECTION -->
-  <section>
-    <div class="dropdown-faq">
-        <a href="#">Question1</a>
-           <div class="dropdown-content">
-             <p>This is the answer to question #1.</p>
-    </div>
-    <div class="dropdown-faq">
-        <a href="#">Question2</a>
-        <div class="dropdown-content">
-    </div>
+
+  <!--Sales Page-->
+
+  <section class="grid2 grey-section">
+      <div class="col-3 box">
+        <h3>Free</h3>
+          <p class="p-sales">
+            <ul class="sales-items">
+              <li>
+                Item 1
+              </li>
+              <li>
+                Item 2
+              </li>
+              <li>
+                Item 3
+              </li>
+              <li>
+                Item 4
+              </li>
+              <li>
+                Item 5
+              </li>
+            </ul>
+          </p>
+      </div>
+      <div class="col-3 box">
+        <h3>Basic</h3>
+          <p class="p-sales">This is sample text to fill my boxes for the sales pages. Each item should be centered and boxed off by a line.</p>
+      </div>
+      <div class="col-3 box">
+        <h3>Pro</h3>
+          <p class="p-sales">This is sample text to fill my boxes for the sales pages. Each item should be centered and boxed off by a line.</p>
+      </div>
+      <div class="col-3 box">
+        <h3>Enterprise</h3>
+          <p class="p-sales">This is sample text to fill my boxes for the sales pages. Each item should be centered and boxed off by a line.</p>
+      </div>
+
   </section>
 
-  <!--TTHIS IS THE TESTIMONIAL SECTION -->
 
+  <!-- THIS IS THE FAQ SECTION -->
+    <!-- <section>
+      <div class="dropdown-faq">
+          <a href="#">Question1</a>
+             <div class="dropdown-content">
+               <p>This is the answer to question #1.</p>
+      </div>
+      <div class="dropdown-faq">
+          <a href="#">Question2</a>
+          <div class="dropdown-content">
+      </div>
+    </section> -->
+
+  <!--TTHIS IS THE TESTIMONIAL SECTION -->
+<!--
   <section class="grid testimonial-background">
     <div class="col-12">
       <h2>TESTIMONIALS</h2>
@@ -174,78 +216,45 @@
      <span>Forensic Nurse Examiner</span>
      </p>
    </div>
-   </div>
-   <div class="col-4">
-     <img class="testimonial-photos" src="images/headshot1.jpg" />
-   </div>
 </section>
 
+ -->
 
-  <!--THIS IS THE SALES PAGE-->
 
-  <section class="grid">
-    <div class="col-12">
-      <h2>Get SANEchart for your organization</h2>
+
+
+<!-- <section>
+  <header class="grid top-banner">
+    <div class="header-logo col-3">
+      <img src="images/sunflower.png" />
     </div>
-    <div class="col-3">
-      <h3>Free</h3>
-        <p>
-          Features in the free plan.
-        </p>
-    </div>
-    <div class="col-3">
-      <h3>Basic</h3>
-        <p>
-          Features in the basic plan.
-        </p>
-    </div>
-    <div class="col-3">
-      <h3>Pro</h3>
-      <p>
-        Features in the pro plan.
-      </p>
-    </div>
-    <div class="col-3">
-      <h3>Enterprise</h3>
-      <p>
-        Features in the enterprise plan.
-      </p>
+    <div class="col-9">
+      <nav class="menu">
+        <a class="word-spacing" href="#about">ABOUT</a>
+        <a class="word-spacing" href="#products/services">PRODUCTS/SERVICES</a>
+        <a class="word-spacing" href="#watch demo">WATCH DEMO</a>
+        <a class="word-spacing"
+        href="#contact">CONTACT</a>
+      </nav>
     </div>
     <div class="col-12">
-      <div>
-        <a href="#">Get SANEchart</a>
+      <h1 class="homepage-title">
+        SANEchart
+      </h1>
+      <div class="small">
+          A FREE, CLOUD-BASED SOLUTION FOR FORENSIC NURSES, FORENSIC PRACTITIONERS AND HEALTHCARE ORGANIZATIONS
       </div>
-      <div>
-      Or,
-      <a href="#">contact us.</a>
+      <div class="col-12">
+        <p class="demo-button">
+          WATCH VIDEO NOW
+        </p>
       </div>
-    </div>
-  </section>
+  </header>
+</section> -->
 
+<!--Contact-->
 
-
-  <section>
-    <h2>Be the first to try SANEchart for your organization!</h2>
-      <p>
-        Complete the form below.
-      </p>
-  </section>
-
-
-
-  <section>
-    <h2>Frequently Asked Questions</h2>
-    <div>
-      <img src="images/sunflower.png" /><This should be a plus symbol for drop-down menu.>
-    </div>
-    <div>
-      <p>
-        This text is sample text to answer a frequently asked question.
-      </p>
-    </div>
-  </section>
-
-
+<!--
   <section>
     <h2>Contact Us</h2>
     <div>
@@ -258,9 +267,7 @@
         [FORM HERE.]
       </p>
     </div>
-  </section>
-
-
+  </section> -->
 
 <!--THIS IS CODE FOR A CONTACT FORM FROM FORMSPREE.IO **REMEMBER TO ADD 'THANK YOU PAGE'-->
 
@@ -315,6 +322,8 @@
         </h3>
       </div>
     </section> -->
+
+    </div>
 
   </body>
 </html>
