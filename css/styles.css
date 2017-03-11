@@ -61,7 +61,7 @@ a:hover {
 
 .top-banner {
   background-color: #dadada;
-  background-image: url("../images/nursetransparentback.png");
+  background-image: url("../images/title.png");
   background-position: center;
   height: 100vh;
   background-size: cover;
@@ -344,7 +344,8 @@ textarea:focus, input:focus{
 }
 
 
-/* Testiomonial grids */
+/* Testiomonial grids
+
 .testimonials-section {
   padding: 10% 0%;
 }
