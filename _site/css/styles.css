@@ -16,6 +16,14 @@ body {
 }
 
 
+.dis-block {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
 /*TYPOGRAPHY*/
 
 h1, h2, h3, h4 {
@@ -118,6 +126,12 @@ header a {
   max-width:40%;
   max-height:40%;
   margin: 5%;
+}
+
+.flexcenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Title and Subheading*/
@@ -405,6 +419,44 @@ li{list-style:none}*/
 
 
 /*TESTIMONIALS*/
+
+#portfolio-grid {
+  padding: 10vh 0vw;
+}
+
+.head-1{
+  background-image: url("/images/headshot1.jpg");
+}
+
+.head-2{
+  background-image: url("/images/headshot2.jpeg");
+}
+
+.head-3{
+  background-image: url("/images/headshot3.jpg");
+}
+
+.pic-1 {
+  background-image: url("/images/headshot1.jpg");
+}
+
+.pic-2 {
+  background-image: url("/images/headshot1.jpg");
+}
+
+.pic-3 {
+  background-image: url("/images/headshot1.jpg");
+}
+
+.pic-4 {
+  background-image: url("/images/headshot1.jpg");
+}
+
+.pic-5 {
+  background-image: url("/images/headshot1.jpg");
+}
+
+
 .image-grid{
   text-align:center;
   margin:auto;
@@ -416,19 +468,39 @@ li{list-style:none}*/
 
 
 .grid-item{
-  display:inline-block;
   width:200px;
   height:200px;
   margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio-grid .grid-item p {
+  display: none;
+}
+
+#portfolio-grid .grid-item:hover p {
+  display: inline;
 }
 
 .grid-item-w2x{
   width:410px;
 }
 
-.grid-item-h2x{
+.grid-item-w3x{
+  width: 620px;
+}
+
+
+.grid-item-h2x {
   height:410px;
 }
+
+.grid-item-h3x {
+  height:620px;
+}
+
+
 @media screen and (max-width: 1900px) {
   /* 5 columns for larger screens */
   #portfolio-grid{
@@ -487,26 +559,8 @@ li{list-style:none}*/
 }
 
 
-/*img.photos2 {
-   max-width:100%;
-   max-height:100%;
-   margin: 5%;
-}*/
+/* footer */
 
-/*WATCH DEMO PAGE*/
-/*
-.video-text {
-  text-align: center;
-  padding-bottom: 3%;
-  padding-top: 3%;
+footer {
+  background-color: #d6d6d6;
 }
-
-.video {
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 3%;
-}
-
-.video-background {
-  background-color: #cecece;
-}*/
