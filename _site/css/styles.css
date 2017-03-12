@@ -15,11 +15,6 @@ body {
   line-height: 1.5;
 }
 
-
-.dis-block {
-  display: block;
-}
-
 .center {
   text-align: center;
 }
@@ -353,6 +348,7 @@ textarea:focus, input:focus{
 
 #portfolio-grid {
   padding: 10vh 0vw;
+  margin: 0 auto;
 }
 
 .testimonial-padding {
@@ -360,11 +356,11 @@ textarea:focus, input:focus{
 }
 
 .head-1{
-  background-image: url("/images/headshot1.jpg");
+  background-image: url("/images/b1.png");
 }
 
 .head-2{
-  background-image: url("/images/headshot2.jpeg");
+  background-image: url("/images/b4.png");
 }
 
 .head-3{
@@ -372,23 +368,23 @@ textarea:focus, input:focus{
 }
 
 .pic-1 {
-  background-image: url("/images/headshot1.jpg");
+  background-image: url("/images/p1.jpg");
 }
 
 .pic-2 {
-  background-image: url("/images/headshot1.jpg");
+  background-image: url("/images/p2.jpg");
 }
 
 .pic-3 {
-  background-image: url("/images/headshot1.jpg");
+  background-image: url("/images/b2.png");
 }
 
 .pic-4 {
-  background-image: url("/images/headshot1.jpg");
+  background-image: url("/images/b3.png");
 }
 
 .pic-5 {
-  background-image: url("/images/headshot1.jpg");
+  background-image: url("/images/b5.png");
 }
 
 
@@ -508,8 +504,18 @@ footer {
   font-size: 1rem;
 }
 
+.footer-link {
+  margin: 0px 10px;
+}
 
+footer i {
+  font-size: 4rem;
+}
 
+footer .logo {
+  height: 100px;
+  margin-top: 3%;
+}
 
 /*COLOR BLOCK*/
 
