@@ -9,4 +9,10 @@ $( document ).ready(function() {
   $(".invite-button").click(function(){
     $(".invite-popup").slideToggle();
   });
+  $('#portfolio-grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200,
+  gutter: 10,
+  });
 });

@@ -405,15 +405,85 @@ li{list-style:none}*/
 
 
 /*TESTIMONIALS*/
+.image-grid{
+  text-align:center;
+  margin:auto;
+  display:block;
+  width:1880px;
+}
 
-img.testimonial-photos {
-   max-width:80%;
-   max-height:80%;
-   margin: 5%;
-    display: block;
-    margin: 0 auto;
-    border: 3px solid #ee3233;
-    border-radius: 50%
+/* grid specific only change if your confident in your code */
+
+
+.grid-item{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  margin-bottom: 10px;
+}
+
+.grid-item-w2x{
+  width:410px;
+}
+
+.grid-item-h2x{
+  height:410px;
+}
+@media screen and (max-width: 1900px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:1670px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:1250px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:1040px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:850px;
+  }
+}
+@media screen and (max-width: 860px) {
+
+  #portfolio-grid{
+    width:630px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  #portfolio-grid{
+    width:410px;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  #portfolio-grid{
+    width:210px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  #portfolio-grid{
+    width:200px;
+  }
+  .grid{width:200px;
+  height:200px;}
 }
 
 

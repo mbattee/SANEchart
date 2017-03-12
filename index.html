@@ -101,7 +101,22 @@ faqs:
   </section>
 
   <!--TESTIMONIALS-->
+<section class="grid image-grid" id="portfolio-grid">
+  <div class="grid-item grid-item-w2x">
 
+  </div>
+  <div class="grid-item grid-item-h2x">
+
+  </div>
+  <div class="grid-item">
+
+  </div>
+  <div class="grid-item">
+
+  </div>
+
+
+</section>
 
 
   <!--SALES PAGE-->
@@ -176,7 +191,12 @@ faqs:
       {% for faq in page.faqs %}
         <div class="faq">
           <div class="faq-question">
-            <div>{{ faq.question }}</div>
+            <div>
+              <span>
+                <i class="fa fa-plus-circle"></i>
+              </span>
+              {{ faq.question }}
+            </div>
             <div class="faq-answer">
               <p>{{ faq.answer }}</p>
             </div>
